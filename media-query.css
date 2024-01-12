@@ -1,0 +1,53 @@
+@media only screen and (max-width : 768px) {
+    .leftbar {
+        display: none;
+    }
+
+    .profile {
+        background-color: rgb(253, 253, 253);
+    }
+
+    .menubarbottom {
+        display: block;
+    }
+
+    .recenTransac,
+    .today {
+        background-color: #EBEBEB;
+        border-radius: 20px;
+    }
+
+    .recenTransac {
+        margin-top: 20px;
+    }
+
+
+
+}
+
+@media only screen and (max-width : 590px) {
+    .flexcol-590 {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media only screen and (min-width : 768px)and (max-width : 1160px) {
+
+
+    .strategy {
+        display: none;
+
+    }
+
+    .col-md-5 {
+        width: 90%;
+    }
+
+    .profile {
+        display: none;
+    }
+}

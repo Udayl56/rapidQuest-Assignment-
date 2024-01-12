@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/380df37fe5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+    </style>
+    <title>RapidQuest Mockup</title>
+
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-light rounded-4 m-1 ">
+            <div class="w-auto   leftbar">
+                <div class="pt-2 ">
+                    <ul class="list-unstyled">
+                        <li class="mt-2"><i class="fa-solid fa-fire-flame-curved " style="font-size: 20px"></i></li>
+                        <li class="mt-4"><i class="fa-solid fa-magnifying-glass align-items-center"
+                                style="font-size: 20px"></i></li>
+                    </ul>
+                </div>
+                <div class="pt-4">
+                    <ul class="list-unstyled">
+                        <li class="bg-primary rounded-1"><i class="fa-solid fa-house  " style="font-size: 20px"></i>
+                        </li>
+                        <li class="pt-4"><i class="fa-solid fa-note-sticky " style="font-size: 20px"></i></li>
+                        <li class="pt-4"><i class="fa-regular fa-newspaper " style="font-size: 20px"></i></li>
+                        <li class="pt-4 "><i class="fa-solid fa-user" style="font-size: 20px"></i></li>
+                    </ul>
+                </div>
+                <div class="  bottom-0 start-10 position-absolute">
+                    <ul class="list-unstyled">
+                        <li class="pt-5"><i class="fa-solid fa-bell" style="font-size: 20px"></i></li>
+                        <li class="pt-5"><i class="fa-solid fa-right-from-bracket" style="font-size: 20px"></i></li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+            <!--profile-->
+            <div class="col-md-3  profile">
+                <div class="d-flex flex-row p-4  ">
+                    <div>
+                        <img src="boy.png" alt="profile" width="50" height="50" style="vertical-align:middle">
+
+                    </div>
+                    <div class="offset-1">
+                        <h4>Hi Mike,</h4>
+                        <h6>welcom Back
+                        </h6>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-column  pt-0 p-4 today">
+                    <br>
+                    <h6>Today</h6>
+                    <div class="p-1 ">
+                        <span class="h4"><b>$20,202</b></span>
+                        <p class="subhedding">Acount Balance
+                        </p>
+                    </div>
+                    <div class="p-1">
+                        <span class="h6"><b>$4,000</b></span>
+                        <p class="subhedding">Year-to-Date Contributions
+                        </p>
+                    </div>
+                    <div class="p-1">
+                        <span class="h6">$1202</span>
+                        <p class="subhedding">Total Interest
+                        </p>
+                    </div>
+
+                    <button class=" btn btn-primary w-75 dropdown-toggle" type="button" aria-expanded="false"
+                        data-toggle="dropdown">
+                        I want to
+                    </button>
+
+
+
+                </div>
+
+                <div class="d-flex flex-column p-4 pt-0 recenTransac">
+                    <br>
+                    <h6>Recent Transaction</h6>
+                    <div>
+                        <span class="subhedding">2021-08-07</span>
+                        <p class="fontsize20px">Withdrawal Transfer to Bank-XX10
+
+                        </p>
+                        <hr>
+
+
+
+                    </div>
+                    <div>
+                        <span class="subhedding">2021-05-17</span>
+                        <p class="fontsize20px">Withdrawal Transfer to Bank-XX10
+                        </p>
+                        <hr>
+
+                    </div>
+                    <div>
+                        <span class="subhedding">2020-012-07</span>
+                        <p class="fontsize20px">Withdrawal Transfer to Bank-XX10
+                        </p>
+                        <hr>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <!-- retirement-->
+            <div class="col-md-5  ">
+
+                <div class="  p-4">
+                    <h6 style="color: blueviolet;">Retirement Income</h6>
+                    <h5>Starting Year 2056</h5>
+                    <div class="d-flex flex-grow-1 mt-4 year">
+
+                        <div class=" flex-fill ">
+                            <h4>$300,000</h4>
+                            <p class="subhedding">My Goal</p>
+                            <hr id="hrline" />
+
+
+                        </div>
+                        <div class=" offset-1 flex-fill">
+                            <h4>59%</h4>
+                            <p class="subhedding">Goal Achived</p>
+                            <hr id="hrline" />
+                        </div>
+                        <div class="offset-1 flex-fill">
+                            <h4>$300</h4>
+                            <p class="subhedding">Est. Montly Income</p>
+                            <hr id="hrline" />
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="barbox ">
+                        <h6>Contribution Overtime</h6>
+                        <canvas id="barChart" class="w-100 h-75"></canvas>
+                    </div>
+
+
+
+                    <div>
+                        <h6>How do I compare to my peers?</h6>
+                        <p class="subhedding">These numbers represent current goal achivement</p>
+
+                        <div class="d-flex  flex-md-row  mt-4 flexcol-590  ">
+
+
+
+
+
+                            <div class="p-1  fontsize20px ">
+
+                                <p><b>Age:</b> Under 30</p>
+                                <hr>
+                                <p><b>Salary:</b>K 30- k 30</p>
+                                <hr>
+                                <p><b>Age:</b> Male</p>
+
+
+                            </div>
+                            <div class="d-flex  flex-row">
+
+
+                                <div class="average offset-1 ">
+                                    <svg width="80" height="80">
+                                        <circle r="30" cx="50%" cy="50%" class="track"></circle>
+                                        <circle r="30" cx="50%" cy="50%" class="progress1"></circle>
+                                        <text x="50%" y="50%" text-anchor="middle" alignment-baseline="central"
+                                            class="percentage">75%</text>
+
+                                    </svg><br>
+                                    <span class="text-center">
+                                        <p>Average</p>
+                                    </span>
+                                </div>
+                                <div class="top  offset-1">
+                                    <svg width="80" height="80">
+                                        <circle r="30" cx="50%" cy="50%" class="track"></circle>
+                                        <circle r="30" cx="50%" cy="50%" class="progress2"></circle>
+                                        <text x="50%" y="50%" text-anchor="middle" alignment-baseline="central"
+                                            class="percentage">94%</text>
+
+                                    </svg><br>
+                                    <span class="text-center">
+                                        <p>Top</p>
+                                    </span>
+                                </div>
+
+                                <div class="me  offset-1 ">
+                                    <svg width="80" height="80">
+                                        <circle r="30" cx="50%" cy="50%" class="track"></circle>
+                                        <circle r="30" cx="50%" cy="50%" class="progress3"></circle>
+                                        <text x="50%" y="50%" text-anchor="middle" alignment-baseline="central"
+                                            class="percentage">60%</text>
+
+                                    </svg><br>
+                                    <span class="text-center">
+                                        <p>Me</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 strategy ">
+                <div class=" Retirement Strategy ms-2 p-2 d-flex flex-column">
+                    <div class="p-3 retirement rounded-3 mt-4">
+                        <h6>Retirement Strategy</h6>
+
+                        <span class=" fontsize20px">Employee Contribution</span>
+                        <div class=" d-flex flex-row ">
+                            <div><input type="range" class="slider" id="slider" min="1" max="100">
+                            </div><span id="value" class="bg-light p-1 offset-1"></span>
+
+                        </div>
+                        <span for="Range" class="fontsize20px">Retirement Age</span>
+                        <div class=" d-flex flex-row">
+                            <div><input type="range" class="slider" id="sliderage" min="1" max="100"></div>
+                            <div class="offset-1">
+                                <span id="valueage" class="bg-light p-1 "></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between fontsize20px   ">
+                            <span class="start-0">Employee Contribution</span>
+                            <span class="end-0">8%</span>
+
+
+                        </div>
+                        <div class="d-flex justify-content-between fontsize20px mt-1">
+                            <span class="start-0">Interest Rate</span>
+                            <span class="end-0"> 5%</span>
+
+                        </div>
+                        <button type="button" class="btn btn-primary rounded-3 mt-2 fontsize20px">Update</button>
+                        <div class="text-center p-2 "><a href="#HelpDocs" class="text-decoration-none fontsize20px">View
+                                Help
+                                Docs <i class="fi fi-bs-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="mt-4 d-flex">
+
+                        <div class="vl"></div>
+                        <div class="offset-1 d-flex flex-column">
+                            <span class="fontsize20px">Are You considering a</span> <span>Housing Advance?</span>
+                            <span class="fontsize20px subhedding">Limited time reduced interest</span>
+                            <a href="#learnMore" class="text-decoration-none mt-1 fontsize20px"
+                                style="color: blueviolet;">Learn More <i class="fi fi-bs-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="menubarbottom  w-100 bottom-0 position-fixed bg-light  p-2 text-center ">
+        <div class="d-flex flex-grow-1  ">
+            <div class="flex-fill"><i class="fa-solid fa-house " style="font-size: 20px"></i></div>
+            <div class="flex-fill"><i class="fa-solid fa-note-sticky " style="font-size: 20px"></i></div>
+            <div class="flex-fill"><i class="fa-regular fa-newspaper " style="font-size: 20px"></i></div>
+            <div class="flex-fill"><i class="fa-solid fa-user" style="font-size: 20px"></i></div>
+            <div class="flex-fill"><i class="fa-solid fa-magnifying-glass align-items-center"
+                    style="font-size: 20px"></i>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+<script src="script.js"></script>
+
+
+</html>

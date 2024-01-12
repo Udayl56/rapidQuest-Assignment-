@@ -1,0 +1,125 @@
+* {
+    font-family: 'PT Serif', serif;
+
+}
+
+body {
+    background-color: hsl(0, 0%, 92%);
+
+}
+
+i:hover {
+    color: #00adb5;
+}
+
+.profile {
+    background-color: hsl(0, 0%, 92%);
+}
+
+.retirement {
+    background-color: #EBEBEB;
+}
+
+#hrline {
+
+    opacity: 100%;
+    border: 1px solid rgb(121, 58, 230);
+}
+
+hr {
+    opacity: 100%;
+    border: 1px solid rgb(106, 106, 106);
+}
+
+.vl {
+    border-left: 1px solid rgb(121, 58, 230);
+    height: 90px;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 160px;
+    height: 5px;
+    background: linear-gradient(90deg, rgb(211, 211, 211) 50%, rgb(211, 211, 211) 50%);
+    border-radius: 2cm;
+    outline: none;
+}
+
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 5px 5px 8px rgba(195, 195, 197, 0.925);
+    cursor: pointer;
+    outline: none;
+
+}
+
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 5px 5px 8px rgba(195, 195, 197, 0.925);
+    cursor: pointer;
+    outline: none;
+
+}
+
+.btn {
+    width: 100%;
+}
+
+.track {
+    stroke-width: 5;
+    stroke: rgb(195, 250, 223);
+    fill: none;
+}
+
+.progress1,
+.progress2,
+.progress3 {
+    stroke-width: 10;
+    stroke: rgb(44, 235, 159);
+
+    stroke-linecap: round;
+    fill: none;
+    transform: rotate(270deg);
+    transform-origin: center;
+}
+
+.percentage {
+    font-size: 20px;
+}
+
+.barbox {
+
+    height: 40%;
+
+
+
+
+}
+
+
+
+.subhedding {
+    color: #828181;
+    font-size: 12px;
+}
+
+.fontsize20px {
+    font-size: 13px;
+}
+
+.menubarbottom {
+    display: none;
+}
